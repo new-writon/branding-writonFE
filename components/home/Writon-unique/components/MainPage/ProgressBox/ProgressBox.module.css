@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  border-radius: 16px;
+  background-color: var(--White);
+  /* background-color: red; */
+  padding: 26px 25px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 5px 20px 74px 0px rgba(192, 196, 227, 0.15);
+}
+
+.title_container {
+  display: flex;
+  gap: 6px;
+}
+
+.title {
+  color: var(--Gray-100, #1b1d1f);
+  font-size: var(--20px);
+  font-weight: 700;
+  margin: auto 0;
+  line-height: 22px;
+  display: flex;
+}
+
+.title_side_box {
+  border-radius: 6px;
+  background: var(--Main-10, #eff1ff);
+  color: var(--Main-50, #6272ff);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  height: fit-content;
+  width: fit-content;
+}
