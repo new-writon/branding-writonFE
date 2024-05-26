@@ -1,22 +1,28 @@
 import type { Metadata } from 'next'
 import '@/styles/global.css'
+import ChannelTalkScript from '@/third-party/ChannelTalkScript'
+import Header from '@/components/common/Header'
 
 export const metadata: Metadata = {
-	title: 'Writon',
-	description: '글과 회고로 함께 성장하는 공간 : writon',
-	icons: {
-		icon: '/image/icon/writon_w.svg',
-	},
+  title: 'Writon',
+  description: '글과 회고로 함께 성장하는 공간 : Writon',
+  icons: {
+    icon: '/image/icon/writon_w.svg',
+  },
 }
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode
+  children: React.ReactNode
 }>) {
-	return (
-		<html lang="ko">
-			<body>{children}</body>
-		</html>
-	)
+  return (
+    <html lang="ko">
+      <body>
+        <Header />
+        {children}
+        <ChannelTalkScript />
+      </body>
+    </html>
+  )
 }
