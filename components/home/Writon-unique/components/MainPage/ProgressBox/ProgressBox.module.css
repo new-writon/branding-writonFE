@@ -35,3 +35,54 @@
   height: fit-content;
   width: fit-content;
 }
+
+.labeling {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label_card {
+  width: fit-content;
+  display: flex;
+  padding: 11px 16px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  background: var(--Main-0, #f5f7ff);
+  line-height: 130%;
+}
+
+.label_title {
+  color: var(--Gray-100, #1b1d1f);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.line {
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: var(--Gray-40, #d2d5db);
+}
+
+.label_count {
+  color: var(--Main-60, #5161ed);
+  font-weight: 600;
+  font-size: var(--18px);
+}
+
+.label_count span {
+  color: var(--Gray-50, #b1b4bc);
+}
+.refund_button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Gray-50, #b1b4bc);
+  font-size: var(--14px);
+  font-weight: 500;
+}

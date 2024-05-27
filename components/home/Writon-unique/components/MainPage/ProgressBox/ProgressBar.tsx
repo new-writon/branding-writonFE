@@ -14,6 +14,7 @@ export default function ProgressBar() {
     setWidth(progressRef?.current?.offsetWidth || 0);
   };
   useEffect(() => {
+    setActive(false);
     setTimeout(() => {
       setActive(true);
     }, 2100);

@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Pretendard', sans-serif !important;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -153,6 +154,7 @@ button {
   padding: 0;
   overflow: visible;
   cursor: pointer;
+  font-family: 'Pretendard' !important;
 }
 
 .progress {
