@@ -8,7 +8,7 @@ import {
 } from 'date-fns';
 import Image from 'next/image';
 import question from '@/public/image/mainPage/icon-question.svg';
-import arrow from '@/public/image/mainPage/Icon-arrow.svg';
+import arrow from '@/public/image/mainPage/icon-calendar-arrow.svg';
 import styles from './CalendarBox.module.css';
 import { useState } from 'react';
 import { RenderDays } from './RenderDays';
