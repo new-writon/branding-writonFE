@@ -3,4 +3,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(180deg, #fff 0%, #f8f8fa 100%);
 }
