@@ -160,3 +160,35 @@ button {
 .progress {
   border-radius: 0 !important;
 }
+
+.slick-track {
+  display: flex !important;
+  gap: 18px !important;
+  padding: 20px 0 30px !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+.slick-dots {
+  bottom: -15px !important;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: var(--Main-50, #6272ff) !important;
+}
+.slick-dots li button:before {
+  font-size: 11px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--Main-50, #6272ff) !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 530px) {
+  .slick-track {
+    gap: 11px !important;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+}
