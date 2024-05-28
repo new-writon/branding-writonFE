@@ -47,12 +47,11 @@ function getLast10Days() {
     const previousDay = new Date(today);
     // 날짜를 i일 전으로 설정
     previousDay.setDate(today.getDate() - i);
-    console.log(i);
     // 배지 색상을 설정
     let badgeColor;
     if (i === 0) {
       badgeColor = 'Purple';
-    } else if (i === 1 || i === 2) {
+    } else if (i === 1 || i === 2 || i === 6 || i === 8 || i === 9) {
       badgeColor = 'Gold';
     } else if (i === 4 || i === 7) {
       badgeColor = 'lightPurple';
@@ -71,7 +70,6 @@ function getLast10Days() {
 
 export default function RenderCell({ fold }: { fold: boolean }) {
   const CalendarData = getLast10Days();
-  console.log(CalendarData);
   const today = new Date(); // 월이 바뀌면 챌린지 마지막날 유지
   const monthStart = startOfMonth(today); // 1월 1일 (그 달의 시작이 나오게 됨.)
   const monthEnd = endOfMonth(today); // 1월 31일이 나옴.(그 달의 끝)
