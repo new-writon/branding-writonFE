@@ -70,11 +70,18 @@
   border-radius: 100%;
 }
 
+.writePre {
+  cursor: pointer;
+  max-width: 114px !important;
+  max-height: 114px !important;
+}
 .writeActive {
   will-change: filter;
   filter: drop-shadow(0px 5px 20px rgba(106, 99, 245, 0.3));
   cursor: pointer;
   animation: dung 1s infinite alternate;
+  max-width: 114px !important;
+  max-height: 114px !important;
 }
 
 @keyframes dung {
