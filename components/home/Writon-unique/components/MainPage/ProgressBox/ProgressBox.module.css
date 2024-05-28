@@ -1,8 +1,7 @@
 .container {
   width: 100%;
   border-radius: 16px;
-  background-color: var(--White);
-  /* background-color: red; */
+  background-color: var(--White, #fff);
   padding: 26px 25px;
   box-sizing: border-box;
   position: relative;
@@ -40,7 +39,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .label_card {
@@ -85,4 +84,10 @@
   color: var(--Gray-50, #b1b4bc);
   font-size: var(--14px);
   font-weight: 500;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.refund_button:hover {
+  background-color: var(--Gray-20);
+  border-radius: 7px;
 }
