@@ -53,11 +53,16 @@
 }
 
 .cell.selected .innerday .text {
-  color: var(--White);
+  color: var(--White, #fff);
   z-index: 1;
+  width: 24px;
+  line-height: 24px;
+  border-radius: 100%;
+  margin-top: 5px;
+  background-color: var(--Main-50, #6272ff);
 }
 .selected::before {
-  content: '';
+  /* content: ''; */
   display: block;
   width: 24px;
   height: 24px;
@@ -77,11 +82,12 @@
 }
 .writeActive {
   will-change: filter;
-  filter: drop-shadow(0px 5px 20px rgba(106, 99, 245, 0.3));
+  filter: drop-shadow(0px 6px 15px rgba(98, 114, 255, 0.15));
   cursor: pointer;
   animation: dung 1s infinite alternate;
   max-width: 114px !important;
   max-height: 114px !important;
+  margin: 2px 0 12px !important;
 }
 
 @keyframes dung {
@@ -145,5 +151,8 @@
   .cell.selected .innerday .text {
     color: var(--Main-50, #6272ff);
     z-index: 1;
+    background-color: transparent;
+    width: 0;
+    margin-top: 13px;
   }
 }
