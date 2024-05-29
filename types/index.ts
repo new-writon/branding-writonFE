@@ -6,3 +6,9 @@ export interface retrospectType {
     content: string;
   }[];
 }
+
+export interface functionIconDataType {
+  image: string;
+  image_color: string;
+  text: string;
+}
