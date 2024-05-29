@@ -1,12 +1,12 @@
 import styles from './CategoryTab.module.css';
 
-import FunctionIcon_retrospectWrite from '@/public/image/icon/function_icon/functionIcon-retrospectWrite.svg';
+import FunctionIcon_retrospectWrite from '@/public/image/icon/function_icon/FunctionIcon-retrospectWrite.svg';
 import FunctionIcon_retrospectWrite_color from '@/public/image/icon/function_icon/FunctionIcon-retrospectWrite-color.svg';
-import FunctionIcon_community from '@/public/image/icon/function_icon/functionIcon-community.svg';
+import FunctionIcon_community from '@/public/image/icon/function_icon/FunctionIcon-community.svg';
 import FunctionIcon_community_color from '@/public/image/icon/function_icon/FunctionIcon-community-color.svg';
-import FunctionIcon_challenge from '@/public/image/icon/function_icon/functionIcon-challenge.svg';
+import FunctionIcon_challenge from '@/public/image/icon/function_icon/FunctionIcon-challenge.svg';
 import FunctionIcon_challenge_color from '@/public/image/icon/function_icon/FunctionIcon-challenge-color.svg';
-import FunctionIcon_smallTalk from '@/public/image/icon/function_icon/functionIcon-smallTalk.svg';
+import FunctionIcon_smallTalk from '@/public/image/icon/function_icon/FunctionIcon-smallTalk.svg';
 import FunctionIcon_smallTalk_color from '@/public/image/icon/function_icon/FunctionIcon-smallTalk-color.svg';
 import React from 'react';
 import FunctionIcon from '../FunctionIcon/FunctionIcon';
