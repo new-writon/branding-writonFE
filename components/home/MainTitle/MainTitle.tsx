@@ -1,5 +1,5 @@
-import styles from './MainTitle.module.css'
-import { StartButton } from '@/components/atom/start-button'
+import styles from './MainTitle.module.css';
+import { StartButton } from '@/components/atom/start-button';
 
 export default function MainTitle() {
   return (
@@ -12,5 +12,5 @@ export default function MainTitle() {
       </span>
       <StartButton backgroundColor="purple" />
     </div>
-  )
+  );
 }
