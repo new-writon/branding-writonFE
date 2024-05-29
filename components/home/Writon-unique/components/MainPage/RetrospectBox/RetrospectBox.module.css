@@ -27,6 +27,9 @@
   width: 100%;
   display: flex;
   position: relative;
+  @media (max-width: 530px) {
+    display: none;
+  }
 }
 
 /* 슬라이드 css */
@@ -54,7 +57,7 @@
 }
 .arrow_button:has(.arrow_previous) {
   left: 0;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
 }
 .arrow_previous {
   transform: rotate(180deg);
@@ -62,14 +65,32 @@
 
 .arrow_button:has(.arrow_next) {
   right: 0;
-  transform: translateX(50%);
+  transform: translateX(40%);
 }
 .arrow_button:hover {
   background-color: var(--Gray-10);
 }
 
 @media (max-width: 530px) {
-  .arrow_box {
+  .arrow_button {
     display: none;
   }
+}
+
+.retrospect_responsive_box {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 11px;
+  margin-top: 12px;
+
+  @media (min-width: 531px) {
+    display: none;
+  }
+}
+.retrospect_responsive_box::-webkit-scrollbar {
+  display: none;
 }

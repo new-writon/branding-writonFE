@@ -63,7 +63,6 @@ export default function RetrospectBox() {
           {RetrospectData.length}개
         </span>
       </div>
-
       <div className={styles.retrospect_box}>
         <button className={styles.arrow_button} onClick={previous}>
           <Image className={styles.arrow_previous} src={arrow} alt="<" />
@@ -78,6 +77,13 @@ export default function RetrospectBox() {
         <button className={styles.arrow_button} onClick={next}>
           <Image className={styles.arrow_next} src={arrow} alt=">" />
         </button>
+      </div>
+      <div className={styles.retrospect_responsive_box}>
+        {RetrospectData.map((data, idx) => (
+          <React.Fragment key={idx}>
+            <RetrospectItem data={data} />
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );
