@@ -1,0 +1,93 @@
+.container {
+  width: 100%;
+  border-radius: 16px;
+  background-color: var(--White, #fff);
+  padding: 26px 25px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 5px 20px 74px 0px rgba(192, 196, 227, 0.15);
+}
+
+.title_container {
+  display: flex;
+  gap: 6px;
+}
+
+.title {
+  color: var(--Gray-100, #1b1d1f);
+  font-size: var(--20px);
+  font-weight: 700;
+  margin: auto 0;
+  line-height: 22px;
+  display: flex;
+}
+
+.title_side_box {
+  border-radius: 6px;
+  background: var(--Main-10, #eff1ff);
+  color: var(--Main-50, #6272ff);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  height: fit-content;
+  width: fit-content;
+}
+
+.labeling {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.label_card {
+  width: fit-content;
+  display: flex;
+  padding: 11px 16px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  background: var(--Main-0, #f5f7ff);
+  line-height: 130%;
+}
+
+.label_title {
+  color: var(--Gray-100, #1b1d1f);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.line {
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: var(--Gray-40, #d2d5db);
+}
+
+.label_count {
+  color: var(--Main-60, #5161ed);
+  font-weight: 600;
+  font-size: var(--18px);
+}
+
+.label_count span {
+  color: var(--Gray-50, #b1b4bc);
+}
+.refund_button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Gray-50, #b1b4bc);
+  font-size: var(--14px);
+  font-weight: 500;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.refund_button:hover {
+  background-color: var(--Gray-20);
+  border-radius: 7px;
+}

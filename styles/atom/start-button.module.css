@@ -1,0 +1,31 @@
+.button {
+  text-align: center;
+  font-size: var(--20px);
+  font-family: Pretendard;
+  font-weight: 600;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.purple {
+  color: var(--White, #fff);
+  background-color: var(--Main-50, #6272ff);
+}
+
+.white {
+  color: var(--Main-50, #6272ff);
+  background-color: var(--White, #fff);
+}
+
+.header_button {
+  color: var(--Main-50, #6272ff);
+  text-align: center;
+  font-size: 1rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  padding: 13px 20px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 1px solid var(--Main-10, #eff1ff);
+}

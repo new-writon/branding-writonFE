@@ -1,0 +1,44 @@
+:root {
+  --Gray-10: #fcfcfc;
+  --Gray-20: #f8f8fa;
+  --Gray-30: #edeef1;
+  --Gray-40: #d2d5db;
+  --Gray-50: #b1b4bc;
+  --Gray-60: #94989f;
+  --Gray-70: #73777e;
+  --Gray-80: #464c52;
+  --Gray-90: #2c2f32;
+  --Gray-100: #1b1d1f;
+
+  --Main-0: #f5f7ff;
+  --Main-10: #eff1ff;
+  --Main-20: #ccd1ff;
+  --Main-30: #a8b1ff;
+  --Main-40: #8592ff;
+  --Main-50: #6272ff;
+  --Main-60: #5161ed;
+  --Main-70: #3846bb;
+  --Main-80: #283399;
+  --Main-90: #1a2477;
+  --Main-100: #0f1655;
+  --ProgressBar-first: #5c76ff;
+  --ProgressBar-second: #8482ff;
+
+  --Purple-0: #f8f8ff;
+  --Main_Purple_10: #f0efff;
+  --Purple-20: #cfcdff;
+  --Purple-30: #aeabff;
+  --Purple-40: #8e89ff;
+  --purple-50: #6a63f5;
+  --Purple-60: #524dd4;
+  --Purple-70: #3e39b2;
+  --Purple-80: #2d2890;
+  --Purple-90: #1e1a6e;
+  --Purple-100: #120f4c;
+  /* --ProgressBar-first: #d5abff;
+  --ProgressBar-second: #6a63f5; */
+
+  --White: #fff;
+  --Dark: #272727;
+  --Error_50: #dc362e;
+}
