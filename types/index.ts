@@ -12,3 +12,21 @@ export interface functionIconDataType {
   image_color: string;
   text: string;
 }
+
+export interface functionSectionDataType {
+  name: string;
+  text: string;
+  image: string[];
+}
+
+export interface functionSectionStateDataType {
+  name: string;
+  state: boolean;
+}
+
+export interface writonRecommendDataType {
+  name: string;
+  image: string;
+  main_title: string;
+  sub_title: string;
+}
