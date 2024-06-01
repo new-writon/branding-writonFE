@@ -3,6 +3,10 @@
   height: 80px;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--White, #fff);
 }
 .inner {
   width: calc(100% - 120px);
