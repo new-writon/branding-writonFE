@@ -1,5 +1,5 @@
 .container {
-  min-width: 80px;
+  min-width: calc(80 / 1080 * 100vh);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -9,8 +9,9 @@
 
 .imageWrapper {
   position: relative;
-  width: 50px;
-  height: 50px;
+
+  width: calc(50 / 1080 * 100vh);
+  height: calc(50 / 1080 * 100vh);
 }
 
 .image {
@@ -24,7 +25,7 @@
 }
 
 .container span {
-  font-size: var(--20px);
+  font-size: calc(20 / 1080 * 100vh);
   font-weight: 600;
   text-align: center;
   transition: color 0.4s ease-in-out;

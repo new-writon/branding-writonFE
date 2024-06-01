@@ -29,6 +29,8 @@ export default function FunctionIcon({
           alt=""
           className={styles.image}
           style={{ opacity: activeFunction === icon.text ? 0 : 1 }}
+          placeholder="blur"
+          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
         />
         <Image
           src={icon.image_color}
