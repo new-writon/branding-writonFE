@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  gap: 40px;
+  gap: calc(40 / 1080 * 100vh);
   justify-content: center;
-  margin-top: 80px;
 }
