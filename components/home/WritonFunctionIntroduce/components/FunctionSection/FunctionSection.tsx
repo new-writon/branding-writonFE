@@ -19,6 +19,7 @@ export default function FunctionSection({
         alt={sectionData.name}
         className={styles.image}
         layout="fill"
+        priority={true}
         quality={100}
         placeholder="blur"
         blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
