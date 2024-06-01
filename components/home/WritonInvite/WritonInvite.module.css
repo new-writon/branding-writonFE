@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  border-radius: 100px;
+  background-color: var(--Main-0, #f5f7ff);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.title {
+  color: var(--Main-100, #0f1655);
+  text-align: center;
+  font-size: calc(36 / 1080 * 100vh);
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: calc(110 / 1080 * 100vh);
+}
+
+.container img {
+  box-shadow: -30px 94px 134px 0px rgba(172, 176, 196, 0.3);
+  position: absolute;
+}
+
+.image_invite {
+  right: 50%;
+  transform: translateX(-20%) rotate(0);
+  bottom: calc(16% - 130px);
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.image_onboarding {
+  left: 50%;
+  transform: translateX(-20%) rotate(0);
+  bottom: calc(-30% - 200px);
+  opacity: 0.3;
+}
+
+.container.active .image_invite {
+  transform: translateX(-20%) translateY(-130px) rotate(-10.763deg);
+  opacity: 1;
+  transition:
+    opacity 0.7s,
+    transform 1.2s;
+}
+
+.container.active .image_onboarding {
+  transform: translateX(-20%) translateY(-200px) rotate(7.575deg);
+  opacity: 1;
+  transition:
+    opacity 1s,
+    transform 0.7s;
+}
+
+.container:not(.active) .image_invite {
+  transform: translateX(-20%) rotate(0);
+  transition:
+    opacity 1s,
+    transform 1.2s;
+}
+.container:not(.active) .image_onboarding {
+  transform: translateX(-20%) rotate(0);
+  transition:
+    opacity 1s,
+    transform 0.7s;
+}
