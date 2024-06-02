@@ -1,11 +1,28 @@
 .button {
+  width: fit-content;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0px 10px 30px 0px rgba(98, 114, 255, 0.15);
+}
+
+.button span {
   text-align: center;
   font-size: var(--20px);
   font-family: Pretendard;
   font-weight: 600;
-  padding: 20px 30px;
-  box-sizing: border-box;
-  border-radius: 100px;
+}
+.button img {
+  width: 0;
+  height: 24px;
+  transition: width 0.5s ease;
+}
+
+.button.hover img {
+  width: 24px;
 }
 
 .purple {
@@ -19,13 +36,40 @@
 }
 
 .header_button {
-  color: var(--Main-50, #6272ff);
-  text-align: center;
-  font-size: 1rem;
-  font-family: Pretendard;
-  font-weight: 600;
   padding: 13px 20px;
   box-sizing: border-box;
   border-radius: 100px;
   border: 1px solid var(--Main-10, #eff1ff);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.5s;
+}
+
+.header_button span {
+  font-size: 1rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  color: var(--Main-50, #6272ff);
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.header_button img {
+  width: 0;
+  height: 19px;
+  transition: width 0.5s ease;
+}
+
+.header_button.hover {
+  border: 1px solid var(--Main-50, #6272ff);
+  background: var(--Main-50, #6272ff);
+}
+
+.header_button.hover span {
+  color: var(--White, #fff);
+}
+
+.header_button.hover img {
+  width: 19px;
 }
