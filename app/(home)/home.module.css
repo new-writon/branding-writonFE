@@ -55,3 +55,17 @@
   position: relative;
   z-index: 1;
 }
+
+.sixth_section {
+  width: 100%;
+  background-color: var(--White, #fff);
+  position: relative;
+  z-index: 1;
+}
+
+.seventh_section {
+  width: 100%;
+  background-color: var(--White, #fff);
+  position: relative;
+  z-index: 1;
+}

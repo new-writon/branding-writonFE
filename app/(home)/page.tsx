@@ -5,6 +5,8 @@ import WritonFunctionIntroduce from '@/components/home/WritonFunctionIntroduce/W
 import WritonInvite from '@/components/home/WritonInvite/WritonInvite';
 import WritonUse from '@/components/home/WritonUse/WritonUse';
 import WritonRecommend from '@/components/home/WritonRecommend/WritonRecommend';
+import WritonFAQ from '@/components/home/WritonFAQ/WritonFAQ';
+import WritonClick from '@/components/home/WritonClick/WritonClick';
 
 export default function Home() {
   return (
@@ -28,6 +30,12 @@ export default function Home() {
       </section>
       <section className={styles.fifth_section}>
         <WritonRecommend />
+      </section>
+      <section className={styles.sixth_section}>
+        <WritonFAQ />
+      </section>
+      <section className={styles.seventh_section}>
+        <WritonClick />
       </section>
     </div>
   );
