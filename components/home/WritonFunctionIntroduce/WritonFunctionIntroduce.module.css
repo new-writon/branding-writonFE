@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  padding: 120px 50px 0;
+  box-sizing: border-box;
+}
+.title {
+  color: var(--Main-100, #0f1655);
+  text-align: center;
+  font-size: var(--50px);
+  font-weight: 700;
+}
+
+.function_container {
+  width: 100%;
+  /* height: calc(100vh - 80px); */
+  margin-top: 80px;
+  padding-bottom: 42px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: calc(100vh * 0.032);
+}
+
+.image_container {
+  width: 100%;
+  height: calc((995 * (100vw - 100px)) / 1628); /* px 단위 명시 */
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

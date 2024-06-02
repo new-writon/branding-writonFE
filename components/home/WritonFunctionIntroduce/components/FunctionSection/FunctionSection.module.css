@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background: var(--Gray-20, #f8f8fa);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(30 / 1250 * 100vh);
+}
+
+.challenge,
+.community,
+.smalltalk {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+.container.active {
+  transform: translateX(0%);
+  transition: transform 0.5s ease;
+}
+
+.title {
+  color: var(--Main-100, #0f1655);
+  text-align: center;
+  font-size: calc(36 / 1080 * 100vh);
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: calc(100vh * 0.064);
+}
+
+.image {
+  position: absolute !important;
+  overflow-y: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.first_image,
+.second_image {
+  transform: translateY(150px);
+  opacity: 0;
+  transition:
+    transform 0.7s,
+    opacity 1s;
+}
+
+.first_image.active,
+.second_image.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.etc_icon_container {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.etc_icon_container.view_active {
+  display: block;
+}
+
+.etc_image {
+  position: absolute;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.etc_image.active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.etc_icon_container img:nth-child(1) {
+  top: 23%;
+  left: 18%;
+}
+.etc_icon_container img:nth-child(2) {
+  top: 35%;
+  right: 32%;
+  transform: translateX(100%);
+}
+.etc_icon_container img:nth-child(3) {
+  top: 47%;
+  left: 15%;
+}
+.etc_icon_container img:nth-child(4) {
+  top: 20%;
+  right: 22%;
+  transform: translateX(100%) rotate(10deg);
+}
+.etc_icon_container img:nth-child(5) {
+  top: 36%;
+  left: 20%;
+  transform: translateX(-100%) rotate(-20deg);
+}
+.etc_icon_container img:nth-child(6) {
+  top: 55%;
+  right: 28%;
+  transform: translateX(100%);
+}

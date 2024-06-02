@@ -1,0 +1,5 @@
+.container {
+  display: flex;
+  gap: calc(40 / 1080 * 100vh);
+  justify-content: center;
+}
