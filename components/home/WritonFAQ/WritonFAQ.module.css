@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  padding: 144px 0;
+  box-sizing: border-box;
+}
+
+.title {
+  color: var(--Main-100, #0f1655);
+  font-size: var(--50px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 75px */
+}
+
+.faq_list {
+  width: calc(100% * (1000 / 1728));
+  height: 500px;
+  background-color: red;
+}
