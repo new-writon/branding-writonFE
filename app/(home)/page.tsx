@@ -11,12 +11,15 @@ import WritonClick from '@/components/home/WritonClick/WritonClick';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <section className={styles.first_section}>
+      <section id="writon_unique" className={styles.first_section}>
         <MainTitle />
         <Writon_MainPage />
       </section>
       <section className={styles.second_section}>
-        <section className={styles.second_white_section}>
+        <section
+          id="function_introduce"
+          className={styles.second_white_section}
+        >
           <WritonFunctionIntroduce />
         </section>
       </section>
@@ -31,7 +34,7 @@ export default function Home() {
       <section className={styles.fifth_section}>
         <WritonRecommend />
       </section>
-      <section className={styles.sixth_section}>
+      <section id="FAQ" className={styles.sixth_section}>
         <WritonFAQ />
       </section>
       <section className={styles.seventh_section}>
