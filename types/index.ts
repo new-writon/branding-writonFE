@@ -17,6 +17,7 @@ export interface functionSectionDataType {
   name: string;
   text: string;
   image: string[];
+  etc_image?: string[];
 }
 
 export interface functionSectionStateDataType {

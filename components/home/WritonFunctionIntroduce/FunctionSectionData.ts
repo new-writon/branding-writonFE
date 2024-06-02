@@ -6,6 +6,15 @@ const image_challenge_1 = '/image/mainPage/functionSection/img-4-challenge.png';
 const image_smalltalk_1 = '/image/mainPage/functionSection/img-5-smalltalk.png';
 const image_smalltalk_2 = '/image/mainPage/functionSection/img-6-smalltalk.png';
 
+const image_community_icon_1 =
+  '/image/mainPage/functionSection/icon/img-bubble-1.png';
+const image_community_icon_2 =
+  '/image/mainPage/functionSection/icon/img-bubble-2.png';
+const image_community_icon_3 =
+  '/image/mainPage/functionSection/icon/img-bubble-3.png';
+const image_community_icon_fire =
+  '/image/mainPage/functionSection/icon/img-fire.png';
+
 export const FunctionIntroduceDummy: functionSectionDataType[] = [
   {
     name: '회고 작성',
@@ -16,6 +25,14 @@ export const FunctionIntroduceDummy: functionSectionDataType[] = [
     name: '커뮤니티',
     text: '팀원들이 남긴 회고를 읽고 소통해요',
     image: [image_community_1, image_community_2],
+    etc_image: [
+      image_community_icon_1,
+      image_community_icon_2,
+      image_community_icon_3,
+      image_community_icon_fire,
+      image_community_icon_fire,
+      image_community_icon_fire,
+    ],
   },
   {
     name: '챌린지',
