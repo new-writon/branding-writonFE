@@ -37,6 +37,5 @@
   position: relative !important;
   overflow-y: hidden;
   bottom: 0;
-  width: calc(920 / 1080 * 100vh) !important;
-  height: calc(839 / 980 * 100vh) !important;
+  width: auto !important;
 }
