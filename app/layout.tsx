@@ -1,7 +1,8 @@
-import type { Metadata } from 'next'
-import '@/styles/global.css'
-import ChannelTalkScript from '@/third-party/ChannelTalkScript'
-import Header from '@/components/common/Header'
+import type { Metadata } from 'next';
+import '@/styles/global.css';
+import ChannelTalkScript from '@/third-party/ChannelTalkScript';
+import Header from '@/components/common/Header';
+import Footer from '@/components/common/Footer';
 
 export const metadata: Metadata = {
   title: 'Writon',
@@ -9,20 +10,21 @@ export const metadata: Metadata = {
   icons: {
     icon: '/image/icon/writon_w.svg',
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="ko">
       <body>
         <Header />
         {children}
+        <Footer />
         <ChannelTalkScript />
       </body>
     </html>
-  )
+  );
 }
