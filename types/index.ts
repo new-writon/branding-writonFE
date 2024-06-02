@@ -31,3 +31,8 @@ export interface writonRecommendDataType {
   main_title: string;
   sub_title: string;
 }
+
+export interface writonFAQDataType {
+  question: string;
+  answer: string;
+}
