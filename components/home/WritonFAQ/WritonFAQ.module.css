@@ -18,6 +18,7 @@
 
 .faq_list {
   width: calc(100% * (1000 / 1728));
-  height: 500px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
