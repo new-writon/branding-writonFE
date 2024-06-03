@@ -6,8 +6,9 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const imageFunctionSectionStyle = {
-  width: 'auto !important',
-  height: '85% !important',
+  maxWidth: '1248px !important',
+  width: '100% !important',
+  height: 'auto !important',
 };
 const imageEtcIconStyle = {
   width: 'auto !important',
@@ -66,7 +67,7 @@ export default function FunctionSection({
           key={idx}
           src={image}
           alt={sectionData.name}
-          className={`${styles.image} ${active === idx && styles.active} ${sectionData.image.length === 2 && idx === 0 && styles.first_image} ${sectionData.image.length === 2 && idx === 1 && styles.second_image}`}
+          className={`${styles.image} ${sectionData.name === '챌린지' && styles.bottom} ${active === idx && styles.active} ${sectionData.image.length === 2 && idx === 0 && styles.first_image} ${sectionData.image.length === 2 && idx === 1 && styles.second_image}`}
           style={imageFunctionSectionStyle}
           width={1500}
           height={1500}

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: calc(30 / 1250 * 100vh);
+  gap: 30px;
 }
 
 .challenge,
@@ -25,12 +25,21 @@
 .title {
   color: var(--Main-100, #0f1655);
   text-align: center;
-  font-size: calc(36 / 1080 * 100vh);
+  font-size: var(--36px);
   font-weight: 600;
   line-height: 130%; /* 46.8px */
   width: fit-content;
   margin: 0 auto;
-  margin-top: calc(100vh * 0.064);
+  margin-top: calc(100vw * 0.028);
+  @media (max-width: 1080px) {
+    white-space: pre-wrap;
+  }
+  @media (max-width: 820px) {
+    font-size: var(--24px);
+  }
+  @media (max-width: 720px) {
+    margin-top: 35px;
+  }
 }
 
 .image {
@@ -40,6 +49,17 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+  border-radius: 100px;
+
+  @media (max-width: 720px) {
+    top: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+.bottom {
+  bottom: -15% !important;
 }
 
 .first_image,

@@ -11,7 +11,11 @@ export default function MainTitle() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: 'easeInOut' }}
     >
-      <span className={styles.main_text}>글과 회고로 함께 성장하는 공간</span>
+      <span className={styles.main_text}>
+        글과 회고로&nbsp;
+        <br />
+        함께 성장하는 공간
+      </span>
       <span className={styles.sub_text}>
         라이톤에서 팀 회고를 작성하고 관리하세요.
         <br />

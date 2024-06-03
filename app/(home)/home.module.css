@@ -10,6 +10,9 @@
   background: linear-gradient(180deg, #fff 0%, #f8f8fa 100%);
   padding: 56px 0 147px;
   box-sizing: border-box;
+  @media (max-width: 720px) {
+    padding: 40px 0 32px;
+  }
 }
 
 .second_section {
@@ -17,6 +20,9 @@
   background-color: var(--Gray-20, #f8f8fa);
   position: sticky;
   top: calc(-250px + 80px);
+  @media (max-width: 720px) {
+    top: calc(-100px + 80px);
+  }
   /* 헤더 높이 빼기 */
 }
 .second_white_section {
@@ -24,6 +30,10 @@
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: var(--White, #fff);
+  @media (max-width: 720px) {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
 .third_section {
@@ -40,6 +50,10 @@
   background-color: var(--White, #fff);
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
+  @media (max-width: 720px) {
+    padding: 50px 16px;
+    border-radius: 0;
+  }
 }
 .forth_section {
   padding-top: 90px;
@@ -47,6 +61,9 @@
   background: linear-gradient(180deg, #fff 50%, #f8f8fa 100%);
   position: relative;
   z-index: 1;
+  @media (max-width: 720px) {
+    padding-top: 0;
+  }
 }
 
 .fifth_section {
