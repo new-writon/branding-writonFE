@@ -90,6 +90,10 @@ video {
   font: inherit;
   vertical-align: baseline;
   font-family: 'Pretendard', sans-serif !important;
+  /* font-size */
+  @media (max-width: 530px) {
+    font-size: 14px;
+  }
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -190,5 +194,15 @@ button {
   }
   .slick-dots {
     display: none !important;
+  }
+}
+
+br {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  br {
+    display: block;
   }
 }
