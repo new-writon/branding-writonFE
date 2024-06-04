@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  min-width: 330px;
 }
 
 .first_section {
