@@ -7,4 +7,63 @@
   flex-direction: column;
   gap: 20px;
   margin: 40px 0 10px;
+  position: relative;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: none;
+  width: 100%;
+  height: 40px;
+  background-color: var(--White, #fff);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.header div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: var(--14px);
+  font-weight: 600;
+  line-height: 150%;
+}
+.header div:nth-child(1) span {
+  color: var(--Gray-100, #212121);
+
+  border-bottom: 2px solid var(--Main-50);
+  padding: 3px 10px 0;
+}
+
+.header div:nth-child(2) span {
+  color: var(--Gray-60, #94989f);
+}
+
+@media (max-width: 530px) {
+  .container {
+    margin: 32px 0;
+    padding: 0px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background: #f8f8fa;
+    /* 브랜딩페이지 컴포넌트 진한 그림자 */
+    box-shadow: -30px 94px 134px 0px rgba(172, 176, 196, 0.3);
+  }
+  .header {
+    display: flex;
+  }
+  .inner {
+    padding: 0px 15px;
+  }
 }

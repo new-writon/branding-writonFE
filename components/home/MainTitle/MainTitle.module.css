@@ -28,3 +28,17 @@
   font-weight: 400;
   line-height: 150%;
 }
+
+@media (max-width: 530px) {
+  .container {
+    gap: 20px;
+  }
+  .main_text {
+    font-size: var(--28px);
+    line-height: 128%; /* 35.84px */
+  }
+
+  .sub_text {
+    font-size: var(--14px);
+  }
+}

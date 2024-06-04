@@ -25,6 +25,10 @@
   @media (max-width: 720px) {
     margin-top: 35px;
   }
+  @media (max-width: 530px) {
+    font-size: var(--18px);
+    line-height: 150%; /* 46.8px */
+  }
 }
 
 .container img {

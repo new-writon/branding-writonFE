@@ -18,6 +18,7 @@
 .calendar_header_left {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 .calendar_header_left span {
   color: var(--Gray-100, #212121);
@@ -29,11 +30,14 @@
 .calendar_header_left button {
   display: flex;
   gap: 6px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.calendar_header_left button span {
   color: var(--Gray-50, #b1b4bc);
   font-size: var(--14px);
   font-weight: 500;
-  padding: 5px;
-  box-sizing: border-box;
 }
 .calendar_header_left button:hover {
   background-color: var(--Gray-20);
@@ -43,13 +47,19 @@
 .calendar_header_right button {
   display: flex;
   align-items: center;
-  color: var(--Gray-70, #73777e);
-  font-size: var(--14px);
-  font-weight: 500;
   padding: 6px 10px 6px 16px;
   box-sizing: border-box;
   border-radius: 10px;
   border: 1px solid var(--Gray-40, #d2d5db);
+}
+.calendar_header_right button span {
+  color: var(--Gray-70, #73777e);
+  font-size: var(--14px);
+  font-weight: 500;
+}
+
+.calendar_icon {
+  display: none;
 }
 
 .open {
@@ -59,4 +69,38 @@
 .close {
   transform: rotate(360deg);
   transition: all 0.5s;
+}
+
+@media (max-width: 530px) {
+  .container {
+    padding: 15px 15px 10px;
+  }
+
+  .calendar_header {
+    margin-bottom: 20px;
+  }
+  .calendar_header_left {
+    gap: 2px;
+    padding-left: 8px;
+  }
+  .calendar_header_left span {
+    font-size: var(--16px);
+  }
+  .calendar_header_left button span {
+    display: none;
+  }
+
+  .calendar_header_right button {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+  }
+  .calendar_header_right button span {
+    display: none;
+  }
+  .calendar_icon {
+    display: block;
+  }
 }

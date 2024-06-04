@@ -7,7 +7,8 @@ export default function ProgressBox() {
     <div className={styles.container}>
       <div className={styles.title_container}>
         <span className={styles.title}>
-          토니님의 라이톤 프로젝트 회고 챌린지
+          토니님의
+          <br /> 라이톤 프로젝트 회고 챌린지
         </span>
         <div className={styles.title_side_box}>D-10</div>
       </div>

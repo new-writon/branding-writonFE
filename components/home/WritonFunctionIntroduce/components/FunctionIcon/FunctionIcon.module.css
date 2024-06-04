@@ -30,3 +30,9 @@
   text-align: center;
   transition: color 0.4s ease-in-out;
 }
+
+@media (max-width: 530px) {
+  .container span {
+    font-size: var(--14px);
+  }
+}
