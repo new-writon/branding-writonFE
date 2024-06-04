@@ -85,7 +85,7 @@ export default function FunctionSection({
             key={idx}
             src={image}
             alt={sectionData.name}
-            className={`${styles.etc_image} ${visibleImages[idx] && styles.active}`}
+            className={`${styles.etc_image} ${idx > 2 ? styles.imageFireIconStyle : styles.imageEtcIconStyle} ${visibleImages[idx] && styles.active}`}
             style={idx > 2 ? imageFireIconStyle : imageEtcIconStyle}
             width={1248}
             height={839}
