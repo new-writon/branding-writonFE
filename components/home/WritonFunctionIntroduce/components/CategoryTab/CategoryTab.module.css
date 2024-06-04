@@ -2,4 +2,7 @@
   display: flex;
   gap: calc(40 / 1080 * 100vh);
   justify-content: center;
+  @media (max-width: 720px) {
+    gap: 11px;
+  }
 }

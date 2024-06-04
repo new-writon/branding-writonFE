@@ -23,7 +23,11 @@ export default function WritonClick() {
         onMouseOut={() => setIsHovered(false)}
       >
         <div className={styles.title_container}>
-          <span className={styles.title}>지금 바로 글을 써보세요</span>
+          <span className={styles.title}>
+            지금 바로
+            <br />
+            글을 써보세요
+          </span>
           <StartButton backgroundColor="white" />
         </div>
         <Image

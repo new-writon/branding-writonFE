@@ -8,14 +8,14 @@ import image_mobile from '@/public/image/mainPage/use-type/image-mobile-use.png'
 import Image from 'next/image';
 
 const imageDesktopStyle = {
-  width: 'calc(743 / 1080 * 100vh) !important',
-  height: 'calc(557 / 1080 * 100vh) !important',
-  borderRadius: 'calc(36 / 980 * 100vh) !important',
+  width: 'calc(743 / 1080 * 100vh)',
+  height: 'calc(557 / 1080 * 100vh)',
+  borderRadius: 'calc(36 / 980 * 100vh)',
 };
 const imageMobileStyle = {
-  width: 'calc(219 / 1080 * 100vh) !important',
-  height: 'calc(474 / 1080 * 100vh) !important',
-  borderRadius: 'calc(30 / 980 * 100vh) !important',
+  width: 'calc(219 / 1080 * 100vh)',
+  height: 'calc(474 / 1080 * 100vh)',
+  borderRadius: 'calc(30 / 980 * 100vh)',
 };
 
 export default function WritonUse() {

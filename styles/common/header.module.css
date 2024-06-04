@@ -7,6 +7,11 @@
   top: 0;
   z-index: 9999;
   background-color: var(--White, #fff);
+  @media (max-width: 820px) {
+    justify-content: normal;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
 }
 .inner {
   width: calc(100% - 120px);
@@ -44,4 +49,7 @@
 .header_right {
   display: flex;
   padding-top: 3px;
+  @media (max-width: 820px) {
+    display: none;
+  }
 }

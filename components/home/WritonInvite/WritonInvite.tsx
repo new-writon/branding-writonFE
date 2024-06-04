@@ -6,12 +6,12 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 const imageInviteStyle = {
-  width: 'calc(410 / 980 * 100vh) !important',
-  height: 'calc(410 / 980 * 100vh) !important',
+  width: 'calc(410 / 980 * 100vh)',
+  height: 'calc(410 / 980 * 100vh)',
 };
 const imageOnboardingStyle = {
-  width: 'calc(578 / 980 * 100vh) !important',
-  height: 'calc(892 / 980 * 100vh) !important',
+  width: 'calc(578 / 980 * 100vh)',
+  height: 'calc(892 / 980 * 100vh)',
 };
 
 export default function WritonInvite() {
@@ -49,7 +49,9 @@ export default function WritonInvite() {
       className={`${styles.container} ${active && styles.active}`}
     >
       <p className={styles.title}>
-        우리 팀만의 프라이빗한 회고 공간으로 초대해요
+        우리 팀만의 프라이빗한&nbsp;
+        <br className={styles.br} />
+        회고 공간으로 초대해요
       </p>
       <Image
         src={image_invite}
