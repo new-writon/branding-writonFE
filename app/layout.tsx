@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     '성장',
   ],
   openGraph: {
-    title: 'Writon :\n글과 회고로 함께 성장하는 공간',
+    title: 'Writon\n:글과 회고로 함께 성장하는 공간',
     description:
       '라이톤은 나에게 필요한 목표달성을 위해 “회고 챌린지”에 도전하고, “커뮤니티”를 통해 다른 유저들과 시너지를 만들어가는 회고&커뮤니티 웹서비스입니다',
     siteName: 'Writon : 글과 회고로 함께 성장하는 공간',
