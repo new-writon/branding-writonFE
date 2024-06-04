@@ -101,9 +101,36 @@
   right: 14px;
   top: 21px;
   color: var(--Gray-50, #b1b4bc);
+  font-size: var(--16px);
 }
 .flag {
   position: absolute;
   left: calc(100% - 36px);
   top: -48px;
+}
+
+@media (max-width: 530px) {
+  .container {
+    margin: 64px 0 30px;
+  }
+  .date {
+    display: none;
+  }
+  .end_date {
+    right: 5px;
+    font-size: var(--12px);
+  }
+  .flag {
+    left: calc(100% - 25px);
+  }
+  .message {
+    border-radius: 50px;
+    background: var(--Base-White, #fff);
+    width: max-content;
+    padding: 8px 10px;
+    bottom: 30px;
+  }
+  .message .arrow {
+    background: var(--Base-White, #fff);
+  }
 }

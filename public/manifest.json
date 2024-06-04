@@ -1,0 +1,32 @@
+{
+  "background_color": "#ffffff",
+  "description": "Writon : 글과 회고로 함께 성장하는 공간",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "iam:Writon",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "iam:Writon",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/image/icon/writon.ico",
+      "sizes": "144x144 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "/image/icon/Icon_(192x192).png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/image/icon/Icon_(512x512).png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}

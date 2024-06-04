@@ -32,7 +32,7 @@ export default function WritonUse() {
         }
       },
       {
-        threshold: 0.3, // 요소가 50% 이상 보이면 콜백 함수 실행
+        threshold: 0.4, // 요소가 50% 이상 보이면 콜백 함수 실행
       },
     );
 

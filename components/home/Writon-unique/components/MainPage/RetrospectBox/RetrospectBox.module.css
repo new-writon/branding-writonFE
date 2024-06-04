@@ -71,12 +71,6 @@
   background-color: var(--Gray-10);
 }
 
-@media (max-width: 530px) {
-  .arrow_button {
-    display: none;
-  }
-}
-
 .retrospect_responsive_box {
   width: 100%;
   display: flex;
@@ -93,4 +87,19 @@
 }
 .retrospect_responsive_box::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 530px) {
+  .title_container {
+    padding-left: 15px;
+  }
+  .title_container span {
+    font-size: var(--18px);
+  }
+  .arrow_button {
+    display: none;
+  }
+  .retrospect_box {
+    display: none;
+  }
 }

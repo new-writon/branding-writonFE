@@ -14,6 +14,9 @@
   @media (max-width: 720px) {
     font-size: var(--24px);
   }
+  @media (max-width: 530px) {
+    font-size: var(--20px);
+  }
 }
 
 .function_container {

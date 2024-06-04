@@ -9,6 +9,7 @@ import {
 import Image from 'next/image';
 import question from '@/public/image/mainPage/icon-question.svg';
 import arrow from '@/public/image/mainPage/icon-calendar-arrow.svg';
+import calendar from '@/public/image/mainPage/icon-calendar.svg';
 import styles from './CalendarBox.module.css';
 import { useState } from 'react';
 import { RenderDays } from './RenderDays';
@@ -33,7 +34,7 @@ export default function CalendarBox() {
           </span>
           <button>
             <Image src={question} alt="question" />
-            챌린지 방법
+            <span>챌린지 방법</span>
           </button>
         </div>
         <div className={styles.calendar_header_right}>
@@ -41,7 +42,8 @@ export default function CalendarBox() {
             className={styles.calendar_button}
             onClick={() => setFold(!fold)}
           >
-            {fold ? '달력 접기' : '달력 펼치기'}
+            <span> {fold ? '달력 접기' : '달력 펼치기'}</span>
+            <Image className={styles.calendar_icon} src={calendar} alt="달력" />
             <Image
               className={`${fold ? styles.open : styles.close}`}
               src={arrow}
