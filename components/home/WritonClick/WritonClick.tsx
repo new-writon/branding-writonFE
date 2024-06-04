@@ -35,6 +35,7 @@ export default function WritonClick() {
           alt="writon"
           style={imageWritonLongStyle}
           className={styles.writon_image}
+          priority={true}
         />
       </div>
     </div>

@@ -51,6 +51,8 @@
 .writon_image {
   position: absolute;
   bottom: 0;
+  width: calc(100vw - 100px) !important;
+  height: calc((360 * (100vw - 100px)) / 1628) !important;
 }
 
 .container.active {
