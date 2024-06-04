@@ -69,8 +69,8 @@ export default function FunctionSection({
           alt={sectionData.name}
           className={`${styles.image} ${sectionData.name === '챌린지' && styles.bottom} ${active === idx && styles.active} ${sectionData.image.length === 2 && idx === 0 && styles.first_image} ${sectionData.image.length === 2 && idx === 1 && styles.second_image}`}
           style={imageFunctionSectionStyle}
-          width={1500}
-          height={1500}
+          width={1248}
+          height={839}
           priority={true}
           quality={100}
           placeholder="blur"
@@ -87,8 +87,8 @@ export default function FunctionSection({
             alt={sectionData.name}
             className={`${styles.etc_image} ${visibleImages[idx] && styles.active}`}
             style={idx > 2 ? imageFireIconStyle : imageEtcIconStyle}
-            width={1500}
-            height={1500}
+            width={1248}
+            height={839}
             priority={true}
             quality={100}
             placeholder="blur"
