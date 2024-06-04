@@ -28,7 +28,7 @@ export default function WritonInvite() {
         }
       },
       {
-        threshold: 0.5, // 요소가 30% 이상 보이면 콜백 함수 실행
+        threshold: 0.4, // 요소가 30% 이상 보이면 콜백 함수 실행
       },
     );
 

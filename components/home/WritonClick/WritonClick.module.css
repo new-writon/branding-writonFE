@@ -13,6 +13,7 @@
   width: calc(100% - 100px);
   background: var(--Main-50, #6272ff);
   height: calc(100% - 180px);
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;

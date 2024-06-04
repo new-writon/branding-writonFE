@@ -72,7 +72,7 @@
 }
 
 .container.active .image_onboarding {
-  transform: translateX(-20%) translateY(-250px) rotate(7.575deg);
+  transform: translateX(-20%) translateY(-220px) rotate(7.575deg);
   opacity: 1;
   transition:
     opacity 1s,
