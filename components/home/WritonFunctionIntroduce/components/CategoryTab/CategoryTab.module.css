@@ -2,7 +2,10 @@
   display: flex;
   gap: calc(40 / 1080 * 100vh);
   justify-content: center;
-  @media (max-width: 720px) {
+}
+
+@media (max-width: 720px) {
+  .container {
     gap: 11px;
   }
 }

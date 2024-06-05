@@ -8,8 +8,8 @@ import writon_long from '@/public/image/icon/writon-long.png';
 import { useState } from 'react';
 
 const imageWritonLongStyle = {
-  width: 'calc(100vw - 100px) !important',
-  height: 'calc((360*(100vw - 100px)) / 1628) !important',
+  width: 'calc(100vw - 100px) ',
+  height: 'calc((360*(100vw - 100px)) / 1628) ',
 };
 
 export default function WritonClick() {
@@ -24,7 +24,7 @@ export default function WritonClick() {
       >
         <div className={styles.title_container}>
           <span className={styles.title}>
-            지금 바로
+            지금 바로&nbsp;
             <br />
             글을 써보세요
           </span>
