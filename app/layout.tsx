@@ -57,6 +57,12 @@ export const metadata: Metadata = {
   ],
 
   manifest: '/manifest.json',
+  verification: {
+    google: '4LZBJp_5GFiVVDo4NcgegnofhCWdDYPhxMdup2l0Ih8',
+    other: {
+      'naver-site-verification': ['5841f14781f9e413e1b2fcf9866d6d55bf8ba62a'],
+    },
+  },
 };
 
 export default function RootLayout({
