@@ -55,6 +55,7 @@
   border-radius: 100px;
   width: 100% !important;
   height: auto !important;
+  max-width: 1248px !important;
   @media (max-width: 720px) {
     top: 0;
     margin: auto;
