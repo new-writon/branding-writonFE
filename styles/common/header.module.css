@@ -52,6 +52,11 @@
 }
 
 @media (max-width: 820px) {
+  .container {
+    justify-content: normal;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
   .text_group,
   .header_right {
     display: none;

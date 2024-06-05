@@ -19,9 +19,6 @@
   font-size: var(--16px);
   font-weight: 600;
   animation: dung 0.8s infinite alternate;
-  @media (max-width: 530px) {
-    display: flex;
-  }
 }
 
 @keyframes dung {
@@ -30,5 +27,11 @@
   }
   100% {
     transform: translate(0, -5px);
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    display: flex;
   }
 }

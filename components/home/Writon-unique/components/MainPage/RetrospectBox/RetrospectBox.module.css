@@ -27,9 +27,6 @@
   width: 100%;
   display: flex;
   position: relative;
-  @media (max-width: 530px) {
-    display: none;
-  }
 }
 
 /* 슬라이드 css */
@@ -80,10 +77,6 @@
   white-space: nowrap;
   gap: 11px;
   margin-top: 12px;
-
-  @media (min-width: 531px) {
-    display: none;
-  }
 }
 .retrospect_responsive_box::-webkit-scrollbar {
   display: none;
@@ -100,6 +93,12 @@
     display: none;
   }
   .retrospect_box {
+    display: none;
+  }
+}
+
+@media (min-width: 531px) {
+  .retrospect_responsive_box {
     display: none;
   }
 }
