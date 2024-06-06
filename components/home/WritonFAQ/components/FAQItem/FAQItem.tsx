@@ -32,7 +32,10 @@ export default function FAQItem({ data }: { data: writonFAQDataType }) {
       </div>
       <div ref={answerRef} className={styles.answer}>
         <span className={styles.a}>A.</span>
-        <span className={styles.answer_text}>{data.answer}</span>
+        <span
+          className={styles.answer_text}
+          dangerouslySetInnerHTML={{ __html: data.answer }}
+        ></span>
       </div>
     </div>
   );

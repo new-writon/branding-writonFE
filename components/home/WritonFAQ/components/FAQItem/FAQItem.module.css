@@ -63,6 +63,9 @@
   line-height: 150%; /* 30px */
   white-space: pre-wrap;
 }
+.answer_text a:hover {
+  color: var(--Main-50);
+}
 
 @media (max-width: 820px) {
   .q,

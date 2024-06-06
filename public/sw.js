@@ -1,1 +1,101 @@
-if(!self.define){let e,i={};const a=(a,n)=>(a=new URL(a+".js",n).href,i[a]||new Promise((i=>{if("document"in self){const e=document.createElement("script");e.src=a,e.onload=i,document.head.appendChild(e)}else e=a,importScripts(a),i()})).then((()=>{let e=i[a];if(!e)throw new Error(`Module ${a} didn’t register its module`);return e})));self.define=(n,c)=>{const s=e||("document"in self?document.currentScript.src:"")||location.href;if(i[s])return;let t={};const r=e=>a(e,s),o={module:{uri:s},exports:t,require:r};i[s]=Promise.all(n.map((e=>o[e]||r(e)))).then((e=>(c(...e),t)))}}define(["./workbox-1bb06f5e"],(function(e){"use strict";importScripts(),self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"/_next/app-build-manifest.json",revision:"db4630c37650f1be3e36607fc4c1ae33"},{url:"/_next/static/chunks/23-826bb7c90b856d54.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/5288ae29-0e931ebf4cbf8030.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/648-9ef0c299c5344f2e.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/726-55fc7e69f42a4349.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/app/(home)/page-30d9221eb3307a29.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/app/_not-found/page-3fb1e6d314c2d9fd.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/app/layout-180659dd1023a5f0.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/app/not-found-5056e9b04e36fa9b.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/cebd11e7-5fc28c135545c414.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/fd9d1056-4a917af64af6b262.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/framework-f66176bb897dc684.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/main-abbe5bd8ef1cca68.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/main-app-e69b4db5b4ffbf0c.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/pages/_app-6a626577ffa902a4.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/pages/_error-1be831200e60c5c0.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js",revision:"79330112775102f91e1010318bae2bd3"},{url:"/_next/static/chunks/webpack-6661d0f57df1be35.js",revision:"tfoxQ-XMD3dszb55kopFp"},{url:"/_next/static/css/14dc6728c81228ea.css",revision:"14dc6728c81228ea"},{url:"/_next/static/css/1afba00a4beec598.css",revision:"1afba00a4beec598"},{url:"/_next/static/css/ce8d6f53c245a4b8.css",revision:"ce8d6f53c245a4b8"},{url:"/_next/static/media/FunctionIcon-challenge-color.a7dc57ab.svg",revision:"6b03df3f3f58ea59f58b6471d56f7467"},{url:"/_next/static/media/FunctionIcon-challenge.878c4443.svg",revision:"c7979fa1dd9d25cd4bd2ba5815bcbf1a"},{url:"/_next/static/media/FunctionIcon-community-color.036cb3c2.svg",revision:"0889b3b9ca857bd5f795b4fdfa1f7b29"},{url:"/_next/static/media/FunctionIcon-community.ec33ae93.svg",revision:"fcc6e0d2fa68f846d02dd1ba19f498dc"},{url:"/_next/static/media/FunctionIcon-retrospectWrite-color.90dbe8f3.svg",revision:"66d7864b81016247c1827603faf36fc0"},{url:"/_next/static/media/FunctionIcon-retrospectWrite.40089991.svg",revision:"38d103c45bfd7d2ad1a03abe234c7b1e"},{url:"/_next/static/media/FunctionIcon-smallTalk-color.0776c921.svg",revision:"bae148e89193d4f077cbc7b47a53ece5"},{url:"/_next/static/media/FunctionIcon-smallTalk.da7f9b82.svg",revision:"e08f92f5467d7239415fb7dee2e17a36"},{url:"/_next/static/media/Pretendard-Black.4aeaaf12.woff2",revision:"4aeaaf12"},{url:"/_next/static/media/Pretendard-Bold.e00e15f4.woff2",revision:"e00e15f4"},{url:"/_next/static/media/Pretendard-ExtraBold.dd3e76c5.woff2",revision:"dd3e76c5"},{url:"/_next/static/media/Pretendard-ExtraLight.b6885b7a.woff2",revision:"b6885b7a"},{url:"/_next/static/media/Pretendard-Light.e725ed3d.woff2",revision:"e725ed3d"},{url:"/_next/static/media/Pretendard-Medium.12f0acdc.woff2",revision:"12f0acdc"},{url:"/_next/static/media/Pretendard-Regular.119cf01b.woff2",revision:"119cf01b"},{url:"/_next/static/media/Pretendard-SemiBold.cfa29e4f.woff2",revision:"cfa29e4f"},{url:"/_next/static/media/Pretendard-Thin.fc2b22d5.woff2",revision:"fc2b22d5"},{url:"/_next/static/media/ajax-loader.0b80f665.gif",revision:"0b80f665"},{url:"/_next/static/media/goldBadge-round.1f56d41c.svg",revision:"817693ba7fd61fbe37e0e4866cc6698b"},{url:"/_next/static/media/goldBadge.6e5b1c21.svg",revision:"1f042f9776f485560a09dffcd64eb8f6"},{url:"/_next/static/media/icon-calendar-arrow.10a7bea9.svg",revision:"4d142adcaa7e6a773fbaf5bfb0d9f9b8"},{url:"/_next/static/media/icon-calendar.e18043ef.svg",revision:"28572186ee572e42eadbd23cb8a6773e"},{url:"/_next/static/media/icon-flag_blue.ae91ff1f.svg",revision:"51f1a3b2051786cffa4dc8ff6e8306b8"},{url:"/_next/static/media/icon-pencil-white.1c6d4d6b.svg",revision:"45e81282c35f0ed732596601f4320fb6"},{url:"/_next/static/media/icon-question.6f1627fe.svg",revision:"415a8c09f24b0ca8fdfb7b9410eaf638"},{url:"/_next/static/media/icon-retrospect-arrow.c4e29d34.svg",revision:"9021436990917dce3c2e4d5196c3a636"},{url:"/_next/static/media/image-desktop-use.9865ec7b.png",revision:"93c4c29d8e127b37111b86acdda81148"},{url:"/_next/static/media/image-invite.9d06c983.png",revision:"38fc6bd41cf2c1522b40f66cadb28a2a"},{url:"/_next/static/media/image-mobile-use.6a7ebe43.png",revision:"8ef9f548787428e550c0b34f7fa7638f"},{url:"/_next/static/media/image-onboarding.67bf5713.png",revision:"f24b78374730fdef877f1a700add2d0f"},{url:"/_next/static/media/preBtn-round_blue.4f6883d2.svg",revision:"8559c9806e84ed83b408ad49d9f8ce65"},{url:"/_next/static/media/silverBadge-round.d48a2aa4.svg",revision:"87f8b0749e093960418ad96d80b2e87e"},{url:"/_next/static/media/silverBadge.1a2f0a35.svg",revision:"bda2e4f73537ab34fbb48fbf3899d3e9"},{url:"/_next/static/media/slick.25572f22.eot",revision:"25572f22"},{url:"/_next/static/media/slick.653a4cbb.woff",revision:"653a4cbb"},{url:"/_next/static/media/slick.6aa1ee46.ttf",revision:"6aa1ee46"},{url:"/_next/static/media/slick.f895cfdf.svg",revision:"f895cfdf"},{url:"/_next/static/media/start_arrow.cee4477d.svg",revision:"cb9b9906bc9bfa8958123eac92a262de"},{url:"/_next/static/media/start_arrow_purple.88a5b3ce.svg",revision:"c98f8938bc7538967d9ec08612435a35"},{url:"/_next/static/media/todayBtn-round_blue.e43421cc.svg",revision:"09c80d73c9f4c4d407dcd7792176f052"},{url:"/_next/static/media/writeActiveClick_blue.77fe7618.svg",revision:"8cede8d33b632cd8e386fdce5ed417c4"},{url:"/_next/static/media/writeActiveHover_blue.1cea38b8.svg",revision:"6e7540d6c6cb65f59ef81b244c456d1c"},{url:"/_next/static/media/writeActive_blue.d222a852.svg",revision:"0b081f9507c66f632ea743e1fa14a71e"},{url:"/_next/static/media/writePre_blue.1e45143e.svg",revision:"77876c44676c5241206e65ccd0af730b"},{url:"/_next/static/media/writon-long.68f91577.png",revision:"17f8ce08b581a6897827511f99425656"},{url:"/_next/static/media/writon_header.3e0bc602.svg",revision:"6d96a3c4557b0665740391e323707a4c"},{url:"/_next/static/tfoxQ-XMD3dszb55kopFp/_buildManifest.js",revision:"2ec694eb52ae4f523f265a46bae4d768"},{url:"/_next/static/tfoxQ-XMD3dszb55kopFp/_ssgManifest.js",revision:"b6652df95db52feb4daf4eca35380933"},{url:"/fonts/Pretendard-Black.otf",revision:"de507f665f6ea63a94678e529b2a4ff0"},{url:"/fonts/Pretendard-Black.woff2",revision:"2af430c08505f68fe8ccbd974e4c85f1"},{url:"/fonts/Pretendard-Bold.otf",revision:"f8a9b84216af5155ffe0e8661203f36f"},{url:"/fonts/Pretendard-Bold.woff2",revision:"33860c9446a2671456e4619020774137"},{url:"/fonts/Pretendard-ExtraBold.otf",revision:"67e8e4773c05f2988c52dfe6ea337f33"},{url:"/fonts/Pretendard-ExtraBold.woff2",revision:"4e75935a8e92c6b078d8e1bafd81cb42"},{url:"/fonts/Pretendard-ExtraLight.otf",revision:"049bb07edff45e5817fa4f892ebabe98"},{url:"/fonts/Pretendard-ExtraLight.woff2",revision:"e54830d29ec09047650dbb81e9a2f3bd"},{url:"/fonts/Pretendard-Light.otf",revision:"de308b576c70af4871d436e89918fdf6"},{url:"/fonts/Pretendard-Light.woff2",revision:"6e125543eff1bb5e7dde302f1f50a7b0"},{url:"/fonts/Pretendard-Medium.otf",revision:"13a352bd44156de92cce335ce93cd02d"},{url:"/fonts/Pretendard-Medium.woff2",revision:"65d0a735617322a4fe0bcc5350642159"},{url:"/fonts/Pretendard-Regular.otf",revision:"84c0ea9d65324c758c8bd9686207afea"},{url:"/fonts/Pretendard-Regular.woff2",revision:"76a1283c27610a9ad7d6940b9b174e46"},{url:"/fonts/Pretendard-SemiBold.otf",revision:"6fe301765c4f438e2034a0a47b609c61"},{url:"/fonts/Pretendard-SemiBold.woff2",revision:"d3b288a528801dae385d6f104693e022"},{url:"/fonts/Pretendard-Thin.otf",revision:"32c8b7e405cd546866e5ef1d33179cba"},{url:"/fonts/Pretendard-Thin.woff2",revision:"120b8200ef02c54246f59471bf4dfcdd"},{url:"/fonts/PretendardVariable.woff2",revision:"302ec55f5b4320354ec6b35a53dead87"},{url:"/image/icon/Icon_(192x192).png",revision:"2c492ab4311a0027904a6fc289989b24"},{url:"/image/icon/Icon_(512x512).png",revision:"25e431558571870200797c872779a40f"},{url:"/image/icon/function_icon/FunctionIcon-challenge-color.svg",revision:"6b03df3f3f58ea59f58b6471d56f7467"},{url:"/image/icon/function_icon/FunctionIcon-challenge.svg",revision:"c7979fa1dd9d25cd4bd2ba5815bcbf1a"},{url:"/image/icon/function_icon/FunctionIcon-community-color.svg",revision:"0889b3b9ca857bd5f795b4fdfa1f7b29"},{url:"/image/icon/function_icon/FunctionIcon-community.svg",revision:"fcc6e0d2fa68f846d02dd1ba19f498dc"},{url:"/image/icon/function_icon/FunctionIcon-retrospectWrite-color.svg",revision:"66d7864b81016247c1827603faf36fc0"},{url:"/image/icon/function_icon/FunctionIcon-retrospectWrite.svg",revision:"38d103c45bfd7d2ad1a03abe234c7b1e"},{url:"/image/icon/function_icon/FunctionIcon-smallTalk-color.svg",revision:"bae148e89193d4f077cbc7b47a53ece5"},{url:"/image/icon/function_icon/FunctionIcon-smallTalk.svg",revision:"e08f92f5467d7239415fb7dee2e17a36"},{url:"/image/icon/openGraph.png",revision:"d91d56bd622f19b37fa4839d25114cb9"},{url:"/image/icon/start_arrow.svg",revision:"cb9b9906bc9bfa8958123eac92a262de"},{url:"/image/icon/start_arrow_purple.svg",revision:"c98f8938bc7538967d9ec08612435a35"},{url:"/image/icon/writon-long.png",revision:"17f8ce08b581a6897827511f99425656"},{url:"/image/icon/writon.ico",revision:"0b3642296ec294215f0804a179fd9ab4"},{url:"/image/icon/writon_header.svg",revision:"6d96a3c4557b0665740391e323707a4c"},{url:"/image/icon/writon_w.svg",revision:"52bf82faddce231632539f540b713aee"},{url:"/image/mainPage/badge/goldBadge-round.svg",revision:"817693ba7fd61fbe37e0e4866cc6698b"},{url:"/image/mainPage/badge/goldBadge.svg",revision:"1f042f9776f485560a09dffcd64eb8f6"},{url:"/image/mainPage/badge/icon-badge-hexagon-gold.svg",revision:"d7ae04b2e106fc40c08f3127e5cfe10d"},{url:"/image/mainPage/badge/icon-badge-hexagon-silver.svg",revision:"3b919c6ece7122e1c4ae187119f020fb"},{url:"/image/mainPage/badge/icon-badge-round-gold.svg",revision:"55dc3b39427b92353be5eaae7f76df56"},{url:"/image/mainPage/badge/icon-badge-round-silver.svg",revision:"405bd249d5a50f5b037e8560280a1456"},{url:"/image/mainPage/badge/preBtn-round_blue.svg",revision:"8559c9806e84ed83b408ad49d9f8ce65"},{url:"/image/mainPage/badge/silverBadge-round.svg",revision:"87f8b0749e093960418ad96d80b2e87e"},{url:"/image/mainPage/badge/silverBadge.svg",revision:"bda2e4f73537ab34fbb48fbf3899d3e9"},{url:"/image/mainPage/badge/todayBtn-round_blue.svg",revision:"09c80d73c9f4c4d407dcd7792176f052"},{url:"/image/mainPage/badge/writeActiveClick_blue.svg",revision:"8cede8d33b632cd8e386fdce5ed417c4"},{url:"/image/mainPage/badge/writeActiveHover_blue.svg",revision:"6e7540d6c6cb65f59ef81b244c456d1c"},{url:"/image/mainPage/badge/writeActive_blue.svg",revision:"0b081f9507c66f632ea743e1fa14a71e"},{url:"/image/mainPage/badge/writePreHover.svg",revision:"f94b3babde5f04b95497ce6469e1bea5"},{url:"/image/mainPage/badge/writePre_blue.svg",revision:"77876c44676c5241206e65ccd0af730b"},{url:"/image/mainPage/functionSection/icon/img-bubble-1.png",revision:"bf3bb5aa84f9ef8f838dc25fcd8788cd"},{url:"/image/mainPage/functionSection/icon/img-bubble-2.png",revision:"3ba3ac50860df460eb5efd5eb3b2b1b6"},{url:"/image/mainPage/functionSection/icon/img-bubble-3.png",revision:"d8bd6bfa76f287f78c4b7b9486cf634e"},{url:"/image/mainPage/functionSection/icon/img-fire.png",revision:"55659acde110c40fe00fbcdda1b9b9ec"},{url:"/image/mainPage/functionSection/img-1-writing.png",revision:"64a8a92b56211343d552dcee65b9a897"},{url:"/image/mainPage/functionSection/img-2-community.png",revision:"dfe2353f42149abdefcd59351f164b9d"},{url:"/image/mainPage/functionSection/img-3-community.png",revision:"bfbebfbee5d7e016ecb4e1f02c8cd8fc"},{url:"/image/mainPage/functionSection/img-4-challenge.png",revision:"d93c06eeabc12bbadc30badd7c8eec67"},{url:"/image/mainPage/functionSection/img-5-smalltalk.png",revision:"4347131f474464809f909676027aea01"},{url:"/image/mainPage/functionSection/img-6-smalltalk.png",revision:"7121a27cd446ba11b913ed739d5f3dc6"},{url:"/image/mainPage/icon-calendar-arrow.svg",revision:"4d142adcaa7e6a773fbaf5bfb0d9f9b8"},{url:"/image/mainPage/icon-calendar.svg",revision:"28572186ee572e42eadbd23cb8a6773e"},{url:"/image/mainPage/icon-flag_blue.svg",revision:"51f1a3b2051786cffa4dc8ff6e8306b8"},{url:"/image/mainPage/icon-highfive.svg",revision:"eba1806e56eaab23a14e0d741f1e45df"},{url:"/image/mainPage/icon-pencil-white.svg",revision:"45e81282c35f0ed732596601f4320fb6"},{url:"/image/mainPage/icon-question.svg",revision:"415a8c09f24b0ca8fdfb7b9410eaf638"},{url:"/image/mainPage/icon-retrospect-arrow.svg",revision:"9021436990917dce3c2e4d5196c3a636"},{url:"/image/mainPage/icon-talking.svg",revision:"79bd4fe0cb71b01eb680bffae70cd014"},{url:"/image/mainPage/invite-onboarding/image-invite.png",revision:"38fc6bd41cf2c1522b40f66cadb28a2a"},{url:"/image/mainPage/invite-onboarding/image-onboarding.png",revision:"f24b78374730fdef877f1a700add2d0f"},{url:"/image/mainPage/use-type/image-desktop-use.png",revision:"93c4c29d8e127b37111b86acdda81148"},{url:"/image/mainPage/use-type/image-mobile-use.png",revision:"8ef9f548787428e550c0b34f7fa7638f"},{url:"/manifest.json",revision:"ced93819d149f6c4acda777007ec4f14"},{url:"/next.svg",revision:"8e061864f388b47f33a1c3780831193e"},{url:"/robots.txt",revision:"face5339735312211bfbb49231afab05"},{url:"/sitemap-0.xml",revision:"00a4c8e91df87b0c9fb46896e8c9f1e2"},{url:"/sitemap.xml",revision:"6b8061ac89b3553b4f238f265f4d3832"},{url:"/vercel.svg",revision:"61c6b19abff40ea7acd577be818f3976"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute("/",new e.NetworkFirst({cacheName:"start-url",plugins:[{cacheWillUpdate:async({request:e,response:i,event:a,state:n})=>i&&"opaqueredirect"===i.type?new Response(i.body,{status:200,statusText:"OK",headers:i.headers}):i}]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:gstatic)\.com\/.*/i,new e.CacheFirst({cacheName:"google-fonts-webfonts",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:31536e3})]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:googleapis)\.com\/.*/i,new e.StaleWhileRevalidate({cacheName:"google-fonts-stylesheets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800})]}),"GET"),e.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,new e.StaleWhileRevalidate({cacheName:"static-font-assets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800})]}),"GET"),e.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,new e.StaleWhileRevalidate({cacheName:"static-image-assets",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\/_next\/image\?url=.+$/i,new e.StaleWhileRevalidate({cacheName:"next-image",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:mp3|wav|ogg)$/i,new e.CacheFirst({cacheName:"static-audio-assets",plugins:[new e.RangeRequestsPlugin,new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:mp4)$/i,new e.CacheFirst({cacheName:"static-video-assets",plugins:[new e.RangeRequestsPlugin,new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:js)$/i,new e.StaleWhileRevalidate({cacheName:"static-js-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:css|less)$/i,new e.StaleWhileRevalidate({cacheName:"static-style-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\/_next\/data\/.+\/.+\.json$/i,new e.StaleWhileRevalidate({cacheName:"next-data",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:json|xml|csv)$/i,new e.NetworkFirst({cacheName:"static-data-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute((({url:e})=>{if(!(self.origin===e.origin))return!1;const i=e.pathname;return!i.startsWith("/api/auth/")&&!!i.startsWith("/api/")}),new e.NetworkFirst({cacheName:"apis",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400})]}),"GET"),e.registerRoute((({url:e})=>{if(!(self.origin===e.origin))return!1;return!e.pathname.startsWith("/api/")}),new e.NetworkFirst({cacheName:"others",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute((({url:e})=>!(self.origin===e.origin)),new e.NetworkFirst({cacheName:"cross-origin",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:3600})]}),"GET")}));
+/**
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// If the loader is already loaded, just stop.
+if (!self.define) {
+  let registry = {};
+
+  // Used for `eval` and `importScripts` where we can't get script URL by other means.
+  // In both cases, it's safe to use a global var because those functions are synchronous.
+  let nextDefineUri;
+
+  const singleRequire = (uri, parentUri) => {
+    uri = new URL(uri + ".js", parentUri).href;
+    return registry[uri] || (
+      
+        new Promise(resolve => {
+          if ("document" in self) {
+            const script = document.createElement("script");
+            script.src = uri;
+            script.onload = resolve;
+            document.head.appendChild(script);
+          } else {
+            nextDefineUri = uri;
+            importScripts(uri);
+            resolve();
+          }
+        })
+      
+      .then(() => {
+        let promise = registry[uri];
+        if (!promise) {
+          throw new Error(`Module ${uri} didn’t register its module`);
+        }
+        return promise;
+      })
+    );
+  };
+
+  self.define = (depsNames, factory) => {
+    const uri = nextDefineUri || ("document" in self ? document.currentScript.src : "") || location.href;
+    if (registry[uri]) {
+      // Module is already loading or loaded.
+      return;
+    }
+    let exports = {};
+    const require = depUri => singleRequire(depUri, uri);
+    const specialDeps = {
+      module: { uri },
+      exports,
+      require
+    };
+    registry[uri] = Promise.all(depsNames.map(
+      depName => specialDeps[depName] || require(depName)
+    )).then(deps => {
+      factory(...deps);
+      return exports;
+    });
+  };
+}
+define(['./workbox-bd7e3b9b'], (function (workbox) { 'use strict';
+
+  importScripts();
+  self.skipWaiting();
+  workbox.clientsClaim();
+  workbox.registerRoute("/", new workbox.NetworkFirst({
+    "cacheName": "start-url",
+    plugins: [{
+      cacheWillUpdate: async ({
+        request,
+        response,
+        event,
+        state
+      }) => {
+        if (response && response.type === 'opaqueredirect') {
+          return new Response(response.body, {
+            status: 200,
+            statusText: 'OK',
+            headers: response.headers
+          });
+        }
+        return response;
+      }
+    }]
+  }), 'GET');
+  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
+    "cacheName": "dev",
+    plugins: []
+  }), 'GET');
+
+}));
+//# sourceMappingURL=sw.js.map
