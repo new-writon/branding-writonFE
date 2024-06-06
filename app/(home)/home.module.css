@@ -18,9 +18,6 @@
   background-color: var(--Gray-20, #f8f8fa);
   position: sticky;
   top: calc(-250px + 80px);
-  @media (max-width: 720px) {
-    top: calc(-100px + 80px);
-  }
   /* 헤더 높이 빼기 */
 }
 .second_white_section {
@@ -96,5 +93,11 @@
 @media (max-width: 530px) {
   .first_section {
     padding: 40px 32px 32px;
+  }
+  .second_section {
+    position: relative;
+  }
+  .third_section {
+    padding: 0;
   }
 }

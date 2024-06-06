@@ -60,4 +60,7 @@
   .image_container {
     height: 462px;
   }
+  .function_container {
+    padding-bottom: 0;
+  }
 }
