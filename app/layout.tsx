@@ -78,7 +78,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <GoogleAnalytics gaId="GTM-N3PB54VW" />
+        <GoogleAnalytics gaId="G-464TRRT3QH" />
         <ChannelTalkScript />
       </body>
     </html>
