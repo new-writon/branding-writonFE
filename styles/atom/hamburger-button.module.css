@@ -1,0 +1,53 @@
+.container {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container div {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--Main-50, #6272ff);
+  border-radius: 2px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.container div:nth-child(1) {
+  top: 0;
+}
+
+.container div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container div:nth-child(3) {
+  bottom: 0;
+  width: 65%;
+}
+
+.container.active div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.container.active div:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+.container.active div:nth-child(3) {
+  opacity: 0;
+  transition: all 0.1s ease-in;
+}
+
+@media (min-width: 531px) {
+  .container {
+    display: none;
+  }
+}
