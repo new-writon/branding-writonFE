@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=0',
 
   icons: [
-    { rel: 'icon', url: '/image/icon/writon_w.svg' },
+    { rel: 'icon', url: '/image/icon/writon_w.svg', sizes: '48x48' },
     { rel: 'icon', url: '/image/icon/Icon_(192x192).png', sizes: '192x192' },
     { rel: 'icon', url: '/image/icon/Icon_(512x512).png', sizes: '512x512' },
   ],
