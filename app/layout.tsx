@@ -3,6 +3,7 @@ import '@/styles/global.css';
 import ChannelTalkScript from '@/third-party/ChannelTalkScript';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const viewport = {
   themeColor: '#ffffff',
@@ -77,6 +78,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="GTM-N3PB54VW" />
         <ChannelTalkScript />
       </body>
     </html>
