@@ -19,7 +19,8 @@ export const WritonFAQDATA: writonFAQDataType[] = [
   {
     question: '사용 가이드를 미리 받아보고 싶어요',
     answer:
-      '아래 페이지에서 몇가지 정보를 입력 후 제출해주세요! 바로 이메일로 가이드를 보내드릴 예정이에요.\n→ https://tally.so/r/3qbyRk',
+      `아래 페이지에서 몇가지 정보를 입력 후 제출해주세요! 바로 이메일로 가이드를 보내드릴 예정이에요.\n` +
+      `→ <a href="https://tally.so/r/3qbyRk" target="_blank">https://tally.so/r/3qbyRk</a>`,
   },
   {
     question: '사용할 수 있는 인원 제한이 있나요?',
