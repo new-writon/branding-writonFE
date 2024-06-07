@@ -50,8 +50,9 @@
   }
   .writon_image {
     width: calc(100% - 100px) !important;
-    max-width: calc(100% - 100px) !important;
+    max-width: 1294px !important;
     height: calc((360 * (100vw - 100px)) / 1628) !important;
+    max-height: 300px !important;
   }
 }
 
