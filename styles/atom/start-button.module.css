@@ -5,7 +5,7 @@
   border-radius: 100px;
   display: flex;
   align-items: center;
-
+  z-index: 1;
   box-shadow: 0px 10px 30px 0px rgba(98, 114, 255, 0.15);
   @media (max-width: 530px) {
     padding: 15px 24px;
