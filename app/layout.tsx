@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     '응원',
     '글',
     '성장',
+    '공유',
   ],
   openGraph: {
     title: 'Writon\n:글과 회고로 함께 성장하는 공간',
