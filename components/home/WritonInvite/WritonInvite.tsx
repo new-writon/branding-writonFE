@@ -72,6 +72,7 @@ export default function WritonInvite() {
         quality={100}
         className={styles.image_invite}
         loader={myLoader}
+        placeholder="blur"
       />
       <Image
         src={image_onboarding}
@@ -80,6 +81,7 @@ export default function WritonInvite() {
         quality={100}
         className={styles.image_onboarding}
         loader={myLoader}
+        placeholder="blur"
       />
     </div>
   );
