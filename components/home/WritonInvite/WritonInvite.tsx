@@ -43,6 +43,18 @@ export default function WritonInvite() {
     };
   }, []);
 
+  const myLoader = ({
+    src,
+    width,
+    quality,
+  }: {
+    src: string;
+    width: number;
+    quality?: number;
+  }) => {
+    return `https://www.iam.writon.co.kr/${src}?w=${width}&q=${quality || 75}`;
+  };
+
   return (
     <div
       ref={elementRef}
@@ -59,6 +71,7 @@ export default function WritonInvite() {
         style={imageInviteStyle}
         quality={100}
         className={styles.image_invite}
+        loader={myLoader}
       />
       <Image
         src={image_onboarding}
@@ -66,6 +79,7 @@ export default function WritonInvite() {
         style={imageOnboardingStyle}
         quality={100}
         className={styles.image_onboarding}
+        loader={myLoader}
       />
     </div>
   );
