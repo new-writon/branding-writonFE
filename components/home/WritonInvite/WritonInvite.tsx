@@ -43,17 +43,17 @@ export default function WritonInvite() {
     };
   }, []);
 
-  const myLoader = ({
-    src,
-    width,
-    quality,
-  }: {
-    src: string;
-    width: number;
-    quality?: number;
-  }) => {
-    return `https://www.iam.writon.co.kr/${src}?w=${width}&q=${quality || 75}`;
-  };
+  // const myLoader = ({
+  //   src,
+  //   width,
+  //   quality,
+  // }: {
+  //   src: string;
+  //   width: number;
+  //   quality?: number;
+  // }) => {
+  //   return `https://www.iam.writon.co.kr/${src}?w=${width}&q=${quality || 75}`;
+  // };
 
   return (
     <div
@@ -71,8 +71,9 @@ export default function WritonInvite() {
         style={imageInviteStyle}
         quality={100}
         className={styles.image_invite}
-        loader={myLoader}
-        placeholder="blur"
+        // loader={myLoader}
+        // placeholder="blur"
+        priority
       />
       <Image
         src={image_onboarding}
@@ -80,8 +81,9 @@ export default function WritonInvite() {
         style={imageOnboardingStyle}
         quality={100}
         className={styles.image_onboarding}
-        loader={myLoader}
-        placeholder="blur"
+        // loader={myLoader}
+        // placeholder="blur"
+        priority
       />
     </div>
   );
