@@ -13,7 +13,7 @@ const imageDesktopStyle = {
   borderRadius: 'calc(36 / 980 * 100vh)',
 };
 const imageMobileStyle = {
-  width: 'calc(219 / 1080 * 100vh)',
+  width: 'calc(219 / 1080 * 100vh) ',
   height: 'calc(474 / 1080 * 100vh)',
   borderRadius: 'calc(30 / 980 * 100vh)',
 };
