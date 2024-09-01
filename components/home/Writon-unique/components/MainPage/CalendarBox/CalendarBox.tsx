@@ -20,8 +20,10 @@ export default function CalendarBox() {
   const monthStart = startOfMonth(today);
   const weekNumber =
     getDay(today) === 0
-      ? differenceInCalendarWeeks(today, monthStart)
-      : differenceInCalendarWeeks(today, monthStart) + 1;
+      ? differenceInCalendarWeeks(today, monthStart) === 0
+        ? differenceInCalendarWeeks(today, monthStart) + 1
+        : differenceInCalendarWeeks(today, monthStart) - 1
+      : differenceInCalendarWeeks(today, monthStart); // 몇주차인지
 
   const [fold, setFold] = useState<boolean>(false);
 
