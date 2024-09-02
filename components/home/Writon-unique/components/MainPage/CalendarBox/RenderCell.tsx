@@ -74,16 +74,15 @@ export default function RenderCell({ fold }: { fold: boolean }) {
   const monthStart = startOfMonth(today); // 1월 1일 (그 달의 시작이 나오게 됨.)
   const monthEnd = endOfMonth(today); // 1월 31일이 나옴.(그 달의 끝)
   const startDate =
-    getDay(today) === 0 && differenceInCalendarWeeks(today, monthStart) === 0
-      ? startOfWeek(addDays(today, -1)) // 9월 1일이 일요일이면 8월 31일이 나오게 됨.
+    getDay(startOfWeek(monthStart)) === 0
+      ? startOfWeek(addDays(startOfWeek(monthStart), -1)) // 9월 1일이 일요일이면 8월 31일이 나오게 됨.
       : startOfWeek(monthStart); // 해당 날짜의 해당 주의 시작 날짜
+
   const endDate = endOfWeek(monthEnd); // 해당 날짜의 해당 주의 끝 날짜
   const weekNumber =
     getDay(today) === 0
-      ? differenceInCalendarWeeks(today, monthStart) === 0
-        ? differenceInCalendarWeeks(today, monthStart)
-        : differenceInCalendarWeeks(today, monthStart) - 1
-      : differenceInCalendarWeeks(today, monthStart); // 몇주차인지
+      ? differenceInCalendarWeeks(today, monthStart)
+      : differenceInCalendarWeeks(today, monthStart) + 1;
 
   const SelectBadge = (day: Date) => {
     let BadgeColor = writeButtons.writeNotSpecified;
