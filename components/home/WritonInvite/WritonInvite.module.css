@@ -22,6 +22,7 @@
 .container img {
   box-shadow: -30px 94px 134px 0px rgba(172, 176, 196, 0.3);
   position: absolute;
+  object-fit: contain;
 }
 
 .image_invite {
@@ -30,6 +31,10 @@
   bottom: calc(16% - 130px);
   z-index: 1;
   opacity: 0.3;
+  width: calc(410 / 980 * 100vw);
+  height: calc(410 / 980 * 100vw);
+  max-width: 410px;
+  max-height: 410px;
 }
 
 .image_onboarding {
@@ -37,6 +42,10 @@
   transform: translateX(-20%) rotate(0);
   bottom: calc(-30% - 200px);
   opacity: 0.3;
+  width: calc(578 / 980 * 100vw);
+  height: calc(892 / 980 * 100vw);
+  max-width: 578px;
+  max-height: 890px;
 }
 
 .container.active .image_invite {

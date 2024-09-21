@@ -5,15 +5,6 @@ import image_onboarding from '@/public/image/mainPage/invite-onboarding/image-on
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
-const imageInviteStyle = {
-  width: 'calc(410 / 980 * 100vh)',
-  height: 'calc(410 / 980 * 100vh)',
-};
-const imageOnboardingStyle = {
-  width: 'calc(578 / 980 * 100vh)',
-  height: 'calc(892 / 980 * 100vh)',
-};
-
 export default function WritonInvite() {
   const [active, setActive] = useState<boolean>(false);
   const elementRef = useRef(null);
@@ -43,6 +34,18 @@ export default function WritonInvite() {
     };
   }, []);
 
+  // const myLoader = ({
+  //   src,
+  //   width,
+  //   quality,
+  // }: {
+  //   src: string;
+  //   width: number;
+  //   quality?: number;
+  // }) => {
+  //   return `https://www.iam.writon.co.kr/${src}?w=${width}&q=${quality || 75}`;
+  // };
+
   return (
     <div
       ref={elementRef}
@@ -53,20 +56,26 @@ export default function WritonInvite() {
         <br className={styles.br} />
         회고 공간으로 초대해요
       </p>
-      <Image
-        src={image_invite}
-        alt="invite"
-        style={imageInviteStyle}
-        quality={100}
-        className={styles.image_invite}
-      />
-      <Image
-        src={image_onboarding}
-        alt="onboarding"
-        style={imageOnboardingStyle}
-        quality={100}
-        className={styles.image_onboarding}
-      />
+      <div className="w-full">
+        <Image
+          src={image_invite}
+          alt="invite"
+          quality={100}
+          className={styles.image_invite}
+          // loader={myLoader}
+          // placeholder="blur"
+          priority
+        />
+        <Image
+          src={image_onboarding}
+          alt="onboarding"
+          quality={100}
+          className={styles.image_onboarding}
+          // loader={myLoader}
+          // placeholder="blur"
+          priority
+        />
+      </div>
     </div>
   );
 }

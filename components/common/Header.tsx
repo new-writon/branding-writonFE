@@ -43,6 +43,7 @@ export default function Header() {
               src={writon_header}
               alt="Writon"
               onClick={() => scrollToSection('top')}
+              priority
             />
             <div className={styles.text_group}>
               <span onClick={() => scrollToSection('function_introduce')}>
