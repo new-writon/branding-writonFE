@@ -12,6 +12,7 @@ export default function WritonFunctionIntroduce() {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [activeFunction, setActiveFunction] = useState<string>('회고 작성');
+  const [isMobile, setIsMobile] = useState(false);
   const [sectionStates, setSectionStates] = useState<
     functionSectionStateDataType[]
   >([
@@ -21,9 +22,19 @@ export default function WritonFunctionIntroduce() {
     { name: '스몰톡', state: false },
   ]);
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 720);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   function isSticky() {
     if (!wrapperRef.current) return false;
-    if (window.innerWidth <= 720) return false; // 모바일에서는 sticky 동작 안함
+    if (isMobile) return false; // 모바일에서는 sticky 동작 안함
     const rect = wrapperRef.current.getBoundingClientRect();
     return rect.top <= 0 && rect.bottom > window.innerHeight;
   }
@@ -80,7 +91,7 @@ export default function WritonFunctionIntroduce() {
   // IntersectionObserver
   useEffect(() => {
     if (!imageContainerRef.current) return;
-    if (window.innerWidth <= 720) return; // 모바일에서는 observer 동작 안함
+    if (isMobile) return; // 모바일에서는 observer 동작 안함
     const observers: IntersectionObserver[] = [];
 
     FunctionIntroduceDummy.forEach((item, idx) => {
@@ -114,13 +125,13 @@ export default function WritonFunctionIntroduce() {
     });
 
     return () => observers.forEach((observer) => observer.disconnect());
-  }, [activeFunction]);
+  }, [activeFunction, isMobile]);
 
   // translateX 제어
   useEffect(() => {
     const onScroll = () => {
       if (!imageContainerRef.current || !wrapperRef.current) return;
-      if (window.innerWidth <= 720) return; // 모바일에서는 translateX 동작 안함
+      if (isMobile) return; // 모바일에서는 translateX 동작 안함
       if (!isSticky()) {
         imageContainerRef.current.style.transform = `translateX(0px)`;
         return;
@@ -154,13 +165,13 @@ export default function WritonFunctionIntroduce() {
 
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [isMobile]);
 
   return (
     <div ref={wrapperRef} className={styles.scroll_wrapper}>
       <p className={styles.title}>라이톤이 제공하는 기능</p>
       <div className={styles.function_container}>
-        {window.innerWidth > 720 && (
+        {!isMobile && (
           <CategoryTab
             activeFunction={activeFunction}
             setActiveFunction={setActiveFunction}
