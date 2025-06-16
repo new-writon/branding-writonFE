@@ -6,8 +6,8 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const imageFunctionSectionStyle = {
-  maxWidth: '1248px !important',
-  width: '100% !important',
+  // maxWidth: '1248px !important',
+  width: '85% !important',
   height: 'auto !important',
 };
 const imageEtcIconStyle = {
