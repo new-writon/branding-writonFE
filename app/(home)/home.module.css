@@ -16,8 +16,8 @@
 .second_section {
   width: 100%;
   background-color: var(--Gray-20, #f8f8fa);
+  top: -30px;
   position: sticky;
-  top: calc(-250px + 80px);
   /* 헤더 높이 빼기 */
 }
 .second_white_section {
@@ -39,8 +39,7 @@
   padding-right: 50px;
   box-sizing: border-box;
   background-color: var(--White, #fff);
-  border-top-left-radius: 500px;
-  border-top-right-radius: 500px;
+  padding-top: 150px;
 }
 .forth_section {
   padding-top: 90px;
@@ -83,7 +82,7 @@
     border-top-right-radius: 60px;
   }
   .third_white_section {
-    padding: 50px 16px;
+    padding: 10px 16px 40px;
     border-radius: 0;
   }
   .forth_section {

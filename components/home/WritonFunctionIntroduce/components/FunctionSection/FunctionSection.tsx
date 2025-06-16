@@ -59,7 +59,7 @@ export default function FunctionSection({
 
   return (
     <div
-      className={`${sectionStates.find((item) => item.name === sectionData.name)?.state && styles.active} ${styles.container} ${sectionData.name === '회고 작성' ? styles.retrospect : sectionData.name === '챌린지' ? styles.challenge : sectionData.name === '커뮤니티' ? styles.community : styles.smalltalk}`}
+      className={`${styles.container} ${sectionData.name === '회고 작성' ? styles.retrospect : sectionData.name === '챌린지' ? styles.challenge : sectionData.name === '커뮤니티' ? styles.community : styles.smalltalk}`}
     >
       <span className={styles.title}>{sectionData.text}</span>
       {sectionData.image.map((image, idx) => (

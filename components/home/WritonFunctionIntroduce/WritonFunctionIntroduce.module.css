@@ -20,19 +20,36 @@
   gap: calc(100vh * 0.032);
 }
 
+.scroll_wrapper {
+  height: 400vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 50px;
+}
 .image_container {
-  width: 100%;
-  max-height: 940px;
-  height: calc((835 * (100vw - 100px)) / 1120); /* px 단위 명시 */
   display: flex;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  width: 520vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  transition: transform 0.5s ease-out;
+}
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  margin-right: 0;
+}
+.slide:last-child {
+  margin-right: 0 !important;
 }
 
 @media (max-width: 1080px) {
   .image_container {
-    height: calc((910 * (100vw - 100px)) / 1120); /* px 단위 명시 */
+    height: calc((910 * (100vw - 100px)) / 1120);
   }
 }
 
@@ -45,11 +62,24 @@
   }
   .function_container {
     margin-top: 43px;
+    gap: 40px;
+  }
+  .scroll_wrapper {
+    height: auto;
+    position: relative;
+    padding-top: 0;
   }
   .image_container {
-    height: 600px;
-    border-radius: 30px;
-    background: var(--Gray-20, #f8f8fa);
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .slide {
+    width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -57,10 +87,13 @@
   .title {
     font-size: var(--20px);
   }
-  .image_container {
-    height: 462px;
-  }
   .function_container {
     padding-bottom: 0;
+  }
+  .image_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
