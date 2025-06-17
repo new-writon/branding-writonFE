@@ -59,6 +59,7 @@
   }
   .title {
     font-size: var(--24px);
+    margin-top: 30px;
   }
   .function_container {
     margin-top: 43px;

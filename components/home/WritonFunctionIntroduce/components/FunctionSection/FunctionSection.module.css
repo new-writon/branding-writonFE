@@ -51,6 +51,7 @@
   border-radius: 100px;
   width: 85% !important;
   height: auto !important;
+  max-width: calc(85vw * 0.85) !important;
   z-index: 1;
   object-fit: contain;
 }
@@ -158,8 +159,8 @@
     white-space: pre-wrap;
   }
   .image {
-    width: 1248px !important;
-    height: 839px !important;
+    width: 85% !important;
+    max-width: 1248px !important;
     transform: translateX(-50%) scale(0.8);
   }
 }
@@ -208,13 +209,6 @@
     transform: none !important;
     opacity: 1;
   }
-}
-@media (max-width: 600px) {
-  .image {
-    transform: translateX(-50%) scale(1.1);
-  }
-}
-@media (max-width: 530px) {
   .container {
     gap: 10px;
   }
@@ -233,4 +227,7 @@
   .etc_image.active {
     display: none;
   }
+}
+
+@media (max-width: 530px) {
 }

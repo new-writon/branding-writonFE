@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const imageFunctionSectionStyle = {
-  // maxWidth: '1248px !important',
+  maxWidth: 'calc(85vw * 0.85) !important',
   width: '85% !important',
   height: 'auto !important',
 };
