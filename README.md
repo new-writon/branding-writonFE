@@ -34,7 +34,7 @@ Writon-branding (라이톤 랜딩 서비스)
 ### Language / Framework
 | Next.js | Typescript |
 |:---:|:---:|
-| <img src="https://blog.kakaocdn.net/dna/tGNZD/btsILhKLgZu/AAAAAAAAAAAAAAAAAAAAADa7E4ouZ5aEAVvkpX8a84idCs_89f7FTzZRhE5_hd9L/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=m2BeqyHAnOhJkB2Jpa5y265ezeY%3D" width="100"/> | <img src="https://github.com/user-attachments/assets/7e2ae257-e3e5-41f6-b5b3-0d418a4e5e85" width="100"/> |
+| <img src="https://github.com/user-attachments/assets/ef1ec538-bcc6-40ac-803b-527328ea0dda" width="100"/> | <img src="https://github.com/user-attachments/assets/7e2ae257-e3e5-41f6-b5b3-0d418a4e5e85" width="100"/> |
 
 
 ### Infra
